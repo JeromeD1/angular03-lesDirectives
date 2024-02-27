@@ -10,5 +10,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'challenge03directives';
+  title: string = 'Bonjour';
+  isAdmin: boolean = true;
+
+  setIsAdmin():void {
+    this.isAdmin= !this.isAdmin;
+  }
 }
